@@ -1,6 +1,7 @@
 *.o
 *.code
-make
-asm
-cpu
+*.asm
+./make
+./subdirs/asm/asm
+./subdirs/cpu/cpu
 doc/
