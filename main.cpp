@@ -3,7 +3,7 @@
 #include <string.h>
 #include <sys/stat.h>
 
-#include "inc/rwfile/rwfile.h"
+#include "rwfile/rwfile.h"
 
 const int MAXLEN_CMD = 100;
 

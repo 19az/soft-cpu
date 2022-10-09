@@ -7,7 +7,7 @@
 
 #include "rwfile_errors.h"
 #define ERR_TYPE ERR_TYPE_RWFILE
-#include "../error_handling/error_handling.h"
+#include "error_handling/error_handling.h"
 
 /// @brief Находит размер файла в байтах
 ///
@@ -55,6 +55,6 @@ void *read_whole_file(const char*   filename,
     #undef ERR_TYPE
 #endif
 
-#include "../error_handling/undef_error_handling.h"
+#include "error_handling/undef_error_handling.h"
 
 #endif /* RWFILE_H */

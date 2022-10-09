@@ -7,7 +7,7 @@
 #define RWFILE_CPP 
 #include "rwfile.h"
 
-#include "../error_handling/error_handling.h"
+#include "error_handling/error_handling.h"
 
 #define get_file_stat(filename, stat_varname, ret_value) \
     ASSERT(filename  != NULL);                           \

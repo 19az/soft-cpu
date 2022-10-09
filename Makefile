@@ -28,10 +28,10 @@ $(SUBDIRS):
 	$(MAKE) ${CMD} -C $@
 
 $(EXE): $(OBJECTS)
-	$(CC) $(CFLAGS) -o $@ $^
+	$(CC) -I$(INCLUDES_DIR)/ $(CFLAGS) -o $@ $^
  
 .cpp.o:
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) -I$(INCLUDES_DIR)/ $(CFLAGS) -c $< -o $@
 
 clean: subdirs_clean
 	rm -rf $(EXE) $(OBJECTS)
