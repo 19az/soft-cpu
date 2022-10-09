@@ -1,15 +1,16 @@
 CC = g++
 CFLAGS =
-include debugflags
+include ../../debugflags
 
-EXE =
-SOURCES =
+EXE = make
+SOURCES = main.cpp
 
-INCLUDES_DIR = inc
+INCLUDES_DIR = ../../inc
+include $(INCLUDES_DIR)/rwfile/Makefile
 
 OBJECTS = $(SOURCES:.cpp=.o)
 
-SUBDIRS = $(wildcard programs/*/.)
+SUBDIRS =
 
 #-------------------------------------------------------------------------------
 
