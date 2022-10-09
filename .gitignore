@@ -1,0 +1,6 @@
+*.o
+*.code
+make
+asm
+cpu
+doc/
