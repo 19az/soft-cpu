@@ -16,7 +16,7 @@ make
 ### Ассемблирование
 
 ```bash
-./subdirs/asm file.asm [file.code]
+./subdirs/asm/asm file.asm [file.code]
 ```
 
 * file.asm - входной файл с ассемблерными инструкциями
@@ -25,7 +25,7 @@ make
 ### Запуск процессора
 
 ```bash
-./subdirs/cpu file.code
+./subdirs/cpu/cpu file.code
 ```
 
 * file.code - файл с машинным кодом
