@@ -6,3 +6,4 @@
 ./subdirs/cpu/cpu
 doc/
 debugflags
+run.sh
