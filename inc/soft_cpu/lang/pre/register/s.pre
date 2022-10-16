@@ -1,0 +1,13 @@
+
+DEF_64( rax )
+DEF_64( rbx )
+DEF_64( rcx )
+DEF_64( rdx )
+DEF_64( r9 )
+DEF_64( r10 )
+DEF_64( r11 )
+DEF_64( r12 )
+DEF_64( r13 )
+DEF_64( r14 )
+DEF_64( r15 )
+DEF_64( rbp )

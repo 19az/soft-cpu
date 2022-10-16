@@ -46,13 +46,13 @@ int main(int argc, const char* const* argv)
 
     if (asm_time > code_time)
     {
-        char cmd[MAXLEN_CMD] = "./subdirs/asm/asm ";
+        char cmd[MAXLEN_CMD] = "./programs/asm/asm ";
         strcat(cmd, file_asm);
 
         system(cmd);
     }
 
-    char cmd[MAXLEN_CMD] = "./subdirs/cpu/cpu ";
+    char cmd[MAXLEN_CMD] = "./programs/cpu/cpu ";
     strcat(cmd, file_code);
 
     system(cmd);

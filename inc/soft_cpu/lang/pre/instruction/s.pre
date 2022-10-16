@@ -1,0 +1,42 @@
+
+DEF_INSTR( add, 0, 
+
+	{
+	PUSH( POP() + POP() );
+	}
+)
+DEF_INSTR( div, 0, 
+
+	{
+	ELEM_T a = POP();
+	ELEM_T b = POP();
+	IF (a == 0) EXIT(ERR_ZERO_DIV_CPU);
+	PUSH( b / a );
+	}
+)
+DEF_INSTR( mul, 0, 
+
+	{
+	PUSH( POP() * POP() );
+	}
+)
+DEF_INSTR( pop, 1, 
+
+	{
+	ARG1 = POP();
+	}
+)
+DEF_INSTR( push, 1, 
+
+	{
+	PUSH( ARG1 );
+	}
+)
+DEF_INSTR( sub, 0, 
+
+	{
+	ELEM_T a = POP();
+	ELEM_T b = POP();
+	PUSH( b - a );
+	}
+)

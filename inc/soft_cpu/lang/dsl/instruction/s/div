@@ -1,0 +1,9 @@
+
+# Делит предверхний элемент на верхний
+
+ELEM_T a = POP()
+ELEM_T b = POP()
+
+IF (a == 0) EXIT(ERR_ZERO_DIV_CPU)
+
+PUSH( b / a )

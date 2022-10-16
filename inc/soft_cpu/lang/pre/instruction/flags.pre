@@ -1,0 +1,4 @@
+
+DEF_FLAG( arg_immed )
+DEF_FLAG( arg_reg )
+DEF_FLAG( arg_mem )

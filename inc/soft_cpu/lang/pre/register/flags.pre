@@ -1,0 +1,3 @@
+
+DEF_FLAG( zero_flag )
+DEF_FLAG( sign_flag )
