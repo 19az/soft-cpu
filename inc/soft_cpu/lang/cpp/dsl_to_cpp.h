@@ -9,3 +9,14 @@
 #define ARG3 *((ELEM_T*) args[2])
 #define ARG4 *((ELEM_T*) args[3])
 
+
+#define DEF_INSTR(name, n_args, ...) \
+    INSTR_##name,
+
+enum Instructions
+{
+    #include "../pre/instruction/s.pre"
+};
+
+#undef DEF_INSTR
+

@@ -1,6 +1,7 @@
 #!/bin/bash
 
-MAX_N_ARGS=4
+echo `cat ../../dsl/instruction/max_n_args` > max_n_args
+MAX_N_ARGS=`cat max_n_args`
 
 dir_path=../../dsl/instruction/s
 
