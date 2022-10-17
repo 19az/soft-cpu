@@ -1,7 +1,7 @@
 
 /// @file asm.h
 ///
-/// @brief Перевод раздела ассемблирования команд процессора с DSL языка на C
+/// @brief Перевод раздела ассемблирования команд процессора с DSL на C
 
 #ifndef ASM_H
 #define ASM_H
@@ -9,7 +9,7 @@
 #include <stdint.h>
 
 //#include "asm_errors.h"
-#define ERR_TYPE_ASM uint8_t
+typedef uint8_t ERR_TYPE_ASM;
 
 enum errors_asm : ERR_TYPE_ASM
 {

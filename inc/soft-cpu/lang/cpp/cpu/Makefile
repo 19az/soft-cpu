@@ -1,3 +1,3 @@
 
-SOURCES += soft-cpu/lang/cpp/cpu/cpu.cpp
+#SOURCES += $(INCLUDES_DIR)/soft-cpu/lang/cpp/cpu/cpu.cpp
 

@@ -1,8 +1,10 @@
 
-include "text/text.h"
+#include "text/text.h"
 
-int main(int argc, const char* const* argv)
+int main(/* int argc, const char* const* argv */)
 {
+    printf("asm\n");
+    /*
     const char* file_asm  = NULL;
     const char* file_code = "a.code";
 
@@ -37,5 +39,6 @@ int main(int argc, const char* const* argv)
     Text* text = construct_text_file(file_asm, );
 
     return 0;
+    */
 }
 
