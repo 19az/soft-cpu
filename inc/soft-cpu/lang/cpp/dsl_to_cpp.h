@@ -1,5 +1,5 @@
 
-#define ELEM_T Elem_t
+#define ELEM_T uint32_t
 
 #define PUSH(val) push(cpu->stk, val)
 #define POP()     pop (cpu->stk)
@@ -15,6 +15,8 @@
 
 enum Instructions
 {
+    INSTR_hlt,
+
     #include "../pre/instruction/s.pre"
 };
 

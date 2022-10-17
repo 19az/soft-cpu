@@ -1,3 +1,4 @@
+
 #ifndef RWFILE_ERRORS_H
 #define RWFILE_ERRORS_H
 
@@ -34,3 +35,4 @@ enum errors_rwfile : ERR_TYPE_RWFILE
 };
 
 #endif /* RWFILE_ERRORS_H */
+
