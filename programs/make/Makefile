@@ -6,6 +6,8 @@ EXE = make
 SOURCES = main.cpp
 
 INCLUDES_DIR = ../../inc
+CFLAGS += -I$(INCLUDES_DIR)/
+
 include $(INCLUDES_DIR)/rwfile/Makefile
 
 OBJECTS = $(SOURCES:.cpp=.o)
@@ -17,10 +19,10 @@ OBJECTS = $(SOURCES:.cpp=.o)
 all: $(EXE)
 
 $(EXE): $(OBJECTS)
-	$(CC) -I$(INCLUDES_DIR)/ $(CFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) -o $@ $^
  
 .cpp.o:
-	$(CC) -I$(INCLUDES_DIR)/ $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -rf $(EXE) $(OBJECTS)

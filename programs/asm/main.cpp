@@ -1,9 +1,14 @@
 
-#include "text/text.h"
+#include <stdio.h>
+
+//#include "text/text.h"
+
+#include "soft-cpu/asm/asm.h"
 
 int main(/* int argc, const char* const* argv */)
 {
     printf("asm\n");
+
     /*
     const char* file_asm  = NULL;
     const char* file_code = "a.code";

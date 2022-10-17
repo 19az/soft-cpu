@@ -1,5 +1,5 @@
 
-#include "cpp/dsl_to_cpp.h"
+#include "../../dsl_to_cpp.h"
 
 #include "../asm.h"
 

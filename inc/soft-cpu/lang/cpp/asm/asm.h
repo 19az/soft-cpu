@@ -3,8 +3,8 @@
 ///
 /// @brief Перевод раздела ассемблирования команд процессора с DSL на C
 
-#ifndef ASM_H
-#define ASM_H
+#ifndef SOFT_CPU_LANG_ASM_H
+#define SOFT_CPU_LANG_ASM_H
 
 #include <stdint.h>
 
@@ -26,8 +26,8 @@ const size_t MAX_N_ARGS =
 
 struct Instruction_Arg
 {
-    ELEM_T value_immed = {};
-    ELEM_T value_reg   = {};
+    void* value_immed = NULL;
+    void* value_reg   = NULL;
     
     unsigned int is_immed : 1;
     unsigned int is_reg   : 1;
@@ -57,5 +57,5 @@ Instruction GetInstruction(const char* instr_name ERR_SUPPORT_DECL);
 
 #include "error_handling/undef_error_handling.h"
 
-#endif /* ASM_H */
+#endif /* SOFT_CPU_LANG_ASM_H */
 

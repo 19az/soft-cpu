@@ -1,5 +1,5 @@
 
-#define ELEM_T uint32_t
+#define ELEM_T uint32_t \\ Is not connected to stack Elem_t
 
 #define PUSH(val) push(cpu->stk, val)
 #define POP()     pop (cpu->stk)
@@ -17,7 +17,7 @@ enum Instructions
 {
     INSTR_hlt,
 
-    #include "../pre/instruction/s.pre"
+    #include "pre/instruction/s.pre"
 };
 
 #undef DEF_INSTR

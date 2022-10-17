@@ -7,3 +7,5 @@ programs/make/make
 doc/
 debugflags
 run.sh
+*/unit_test
+*/test.sh

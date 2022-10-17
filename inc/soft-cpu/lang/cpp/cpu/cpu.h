@@ -3,8 +3,8 @@
 ///
 /// @brief Перевод раздела исполнения команд процессора с DSL на С
 
-#ifndef CPU_H
-#define CPU_H
+#ifndef SOFT_CPU_LANG_CPU_H
+#define SOFT_CPU_LANG_CPU_H
 
 //#include "cpu_errors.h"
 typedef ERR_TYPE_CPU uint8_t;
@@ -22,4 +22,4 @@ typedef ERR_TYPE_CPU uint8_t;
 
 #include "error_handling/undef_error_handling.h"
 
-#endif /* CPU_H */
+#endif /* SOFT_CPU_LANG_CPU_H */

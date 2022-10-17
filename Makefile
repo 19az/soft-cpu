@@ -6,6 +6,7 @@ EXE =
 SOURCES =
 
 INCLUDES_DIR = inc
+CFLAGS += -I$(INCLUDES_DIR)/
 
 OBJECTS = $(SOURCES:.cpp=.o)
 
@@ -27,10 +28,10 @@ $(SUBDIRS):
 	$(MAKE) ${CMD} -C $@
 
 $(EXE): $(OBJECTS)
-	$(CC) -I$(INCLUDES_DIR)/ $(CFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) -o $@ $^
  
 .cpp.o:
-	$(CC) -I$(INCLUDES_DIR)/ $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean: subdirs_clean
 	rm -rf $(EXE) $(OBJECTS)
